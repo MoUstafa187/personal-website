@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moustafa Ahmed</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- video loop -->
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
+      </video>
+      <!-- End video loop -->
+      <!-- Header Start -->
+      <header class="header">
+        <label class="burger-menu" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#project" class="navigation__link navigation__project"
+                >project</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- toggle button -->
+        <div class="toggle">
+          <h3 class="toggle__title">Switch theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+        <!-- end toggle button -->
+      </header>
+      <!-- Header End -->
+      <!-- Bio Section -->
+      <section class="bio section" id="bio">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Moustafa Ahmed</span>
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="./my-cv.pdf" class="bio__links find-out-link" target="_blank"
+            >Download CV <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            src="images/moustafa-pic.png"
+            alt="Moustafa Ahmed Picture"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+      <!-- End Bio Section -->
+      <!-- skills section -->
+      <section id="skills" class="section skills section-with-bg">
+        <h2 class="h2__heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Tailwind CSS</h2>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+          </li>
+        </ul>
+      </section>
+      <!-- end skills section -->
+      <!-- project Section -->
+      <section id="project" class="section project">
+        <h2 class="h2__heading">
+          MY FEATURED <br />
+          projects
+        </h2>
+        <div class="project__main">
+          <img
+            src="images/coming-soon.jpg"
+            alt="LaslesVPN"
+            class="project__img"
+          />
+          <div class="project__data">
+            <h3 class="h3__heading">LaslesVPN</h3>
+            <p class="project__description">
+              This project is a landing page for the "LaslesVPN" app. It aims to
+              showcase the features of the app and make visitors feel like
+              trying it.
+            </p>
+            <a href="#" class="project__link">Take a look </a>
+          </div>
+        </div>
+        <div class="project__main">
+          <div class="project__data">
+            <h3 class="h3__heading">Todo App</h3>
+            <p class="project__description">
+              The classic todo app with a few twists! This app includes a
+              dark/light theme toggle and drag & drop reordering for anyone
+              wanting an extra test.
+            </p>
+            <a href="#" class="project__link">Take a look </a>
+          </div>
+          <img
+            src="images/coming-soon.jpg"
+            alt="LaslesVPN"
+            class="project__img"
+          />
+        </div>
+        <div class="project__main">
+          <img
+            src="images/coming-soon.jpg"
+            alt="LaslesVPN"
+            class="project__img"
+          />
+          <div class="project__data">
+            <h3 class="h3__heading">Blog App</h3>
+            <p class="project__description">
+              This project is about building a Blog App using React JS
+            </p>
+            <a href="#" class="project__link">Take a look </a>
+          </div>
+        </div>
+      </section>
+      <!-- End project Section -->
+      <!-- Contact -->
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a href="mailto:mostafaahmad543@gmail.com" class="contact__email"
+            >mostafaahmad543@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a
+              class="contact__social"
+              href="https://web.facebook.com/profile.php?id=100010027020792"
+              target="_blank"
+            >
+              <img src="./images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a
+              class="contact__social"
+              href="https://x.com/Moustaf43723592"
+              target="_blank"
+            >
+              <img src="./images/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a
+              class="contact__social"
+              href="https://github.com/MoUstafa187"
+              target="_blank"
+            >
+              <img src="./images/brand/github.svg" alt="github" />
+            </a>
+            <a
+              class="contact__social"
+              href="https://www.instagram.com/moustafa_ah_7/?hl=en"
+              target="_blank"
+            >
+              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a
+              class="contact__social"
+              href="https://www.linkedin.com/in/mostafa-ahmed-b12280192/"
+              target="_blank"
+            >
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__formContent">
+          <h2 class="h2__heading">
+            LET’S WORK <br />
+            TOGETHER!
+          </h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Full Name"
+                required
+                name="fullName"
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                pattern="^01[0-2]\d{1,8}$"
+                required
+                name="telephone"
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+            ></textarea>
+            <input class="contact__button" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+      <!-- End Contact -->
+      <footer class="footer">© 2024 by Moustafa Ahmed</footer>
+    </div>
+  </body>
+</html>
